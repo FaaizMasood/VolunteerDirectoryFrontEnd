@@ -9,13 +9,14 @@ function App() {
   return (
     <div>
       <Router>
+        <HeaderComponent />
         <div className="container">
-          <HeaderComponent />
           <Routes>
             <Route path="/" element={<ListVolunteerComponent />} />
+            <Route path="/volunteers" element={<ListVolunteerComponent />} />
           </Routes>
-          <FooterComponent />
         </div>
+        <FooterComponent />
       </Router>
     </div>
   )
